@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WT-6431 Ödevi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <style>
+        body {
+            background-color: #0a5e96;
+
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            color: rgb(250, 253, 90);
+        }
+
+        #secenekler {
+
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="mb-4" style="color: antiquewhite; text-align: center;">HTML Form Örneği</h2>
+        <form action="https://formsubmit.co/scarfacearif_55@hotmail.com" method="POST"">
+            <div class=" form-group">
+            <label for="ad">Adınız:</label>
+            <input type="text" class="form-control" id="ad" placeholder="Adınızı giriniz" required>
+    </div>
+    <div class="form-group">
+        <label for="soyad">Soyadınız:</label>
+        <input type="text" class="form-control" id="soyad" placeholder="Soyadınızı giriniz" required>
+    </div>
+    <div class="form-group">
+        <label for="email">E-posta Adresiniz:</label>
+        <input type="email" class="form-control" id="email" placeholder="E-posta adresinizi giriniz" required>
+    </div>
+    <div class="form-group">
+        <label for="yas">Yaşınız:</label>
+        <select class="form-control" id="yas" required>
+            <option value="">Yaşınızı Seçiniz</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Mesaj">Mesajınız:</label>
+        <textarea class="form-control" id="aciklama" rows="4" maxlength="144"
+            placeholder="Görev açıklamasını girin (maksimum 144 karakter)" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="secenekler;">Sitemizi Ne Kadar Beğendiniz:</label>
+        <input type="range" class="form-control-range" id="degerlendirme" min="0" max="10" step="0.5" value="5"
+            required>
+        <output for="degerlendirme" id="degerlendirme-deger">5</output>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="onay" required>
+            <label class="form-check-label" for="onay">Onaylıyorum</label>
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Gönder</button>
+        <button type="reset" class="btn btn-secondary">Temizle</button>
+
+        </form>
+
+    </div>
+    <script>
+        // JavaScript kullanarak yaş seçeneklerini oluşturdum.
+        var yasSelect = document.getElementById('yas');
+        for (var i = 15; i <= 70; i++) {
+            var option = document.createElement('option');
+            option.value = i;
+            option.text = i;
+            yasSelect.appendChild(option);
+        }
+        // Range input değerini gösterme
+        var rangeInput = document.getElementById('degerlendirme');
+        var output = document.getElementById('degerlendirme-deger');
+        output.innerHTML = rangeInput.value;
+
+        rangeInput.oninput = function () {
+            output.innerHTML = this.value;
+        }
+    </script>
+</body>
+
+</html>
