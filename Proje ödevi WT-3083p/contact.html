@@ -16,7 +16,12 @@
     <!-- Core theme CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!--CSS Stil-->
-    <link href="styles.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet"/>
+    <style>
+        .py-5 {
+            background-color: #99ebffe7;
+        }
+    </style>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -59,11 +64,12 @@
                             <!-- To make this form functional, sign up at-->
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
-                            <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="https://formsubmit.co/scarfacearif_55@hotmail.com" method="post">
+                            <form id="contactForm" data-sb-form-api-token="API_TOKEN"
+                                action="https://formsubmit.co/scarfacearif_55@hotmail.com" method="post">
                                 <!-- Name input-->
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="name" type="text" placeholder="Adınızı Soyadınızı giriniz..."
-                                        data-sb-validations="required" />
+                                    <input class="form-control" id="name" type="text"
+                                        placeholder="Adınızı Soyadınızı giriniz..." data-sb-validations="required" />
                                     <label for="name">Ad Soyad</label>
                                     <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.
                                     </div>
@@ -105,7 +111,7 @@
                                         To activate this form, sign up at
                                         <br />
                                         <a
-                                            href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                            href="https://formsubmit.co/scarfacearif_55@hotmail.com">https://startbootstrap.com/solution/contact-forms</a>
                                     </div>
                                 </div>
                                 <!-- Submit error message-->
@@ -116,7 +122,7 @@
                                     <div class="text-center text-danger mb-3">Error sending message!</div>
                                 </div>
                                 <!-- Submit Button-->
-                                <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton"
+                                <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton"
                                         type="submit">Submit</button></div>
                             </form>
                         </div>
@@ -127,26 +133,26 @@
                     <div class="col">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
                                 class="bi bi-chat-dots"></i></div>
-                        <div class="h5 mb-2">Chat with us</div>
-                        <p class="text-muted mb-0">Chat live with one of our support specialists.</p>
+                        <div class="h5 mb-2">Bizimle iletişime geç</div>
+                        <p class="text-dark mb-0">Destek uzmanlarımızdan biriyle canlı sohbet edin.</p>
                     </div>
                     <div class="col">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
                                 class="bi bi-people"></i></div>
-                        <div class="h5">Ask the community</div>
-                        <p class="text-muted mb-0">Explore our community forums and communicate with other users.</p>
+                        <div class="h5">Topluluğa sorun</div>
+                        <p class="text-dark mb-0">Topluluk forumlarımızı keşfedin ve diğer kullanıcılarla iletişim kurun.</p>
                     </div>
                     <div class="col">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
                                 class="bi bi-question-circle"></i></div>
-                        <div class="h5">Support center</div>
-                        <p class="text-muted mb-0">Browse FAQ's and support articles to find solutions.</p>
+                        <div class="h5">Destek Merkezi</div>
+                        <p class="text-dark mb-0">Çözüm bulmak için SSS'lere ve destek makalelerine göz atın.</p>
                     </div>
                     <div class="col">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
                                 class="bi bi-telephone"></i></div>
-                        <div class="h5">Call us</div>
-                        <p class="text-muted mb-0">Call us during normal business hours at (555) 892-9403.</p>
+                        <div class="h5">Bizi arayın</div>
+                        <p class="text-dark mb-0">Bizi mesai saatleri içinde (555) 892 9403 numaralı telefondan arayabilirsiniz.</p>
                     </div>
                 </div>
             </div>
