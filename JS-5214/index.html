@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ödev JS-5214</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .mobile-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #555;
+            height: 600px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .desktop-mobile-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #555;
+            height: 600px;
+            color: white;
+            border-radius: 10px;
+        }
+
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            position: relative;
+        }
+
+        .topnav #myLinks {
+            display: none;
+        }
+
+        .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+
+        .topnav a.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav {
+                display: none;
+            }
+
+            .icon {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 601px) {
+            .topnav-mobile {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active">Ödev JS-5214</a>
+            <div id="myLinks">
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div class="topnav-mobile">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+
+        <div style="padding-left:16px">
+            <h3>Soru 1 Cevabı</h3>
+            <p>Bu etkinin arkasındaki mantık, JavaScript kullanarak CSS'in display özelliğini değiştirmektir. Örnekte,
+                JavaScript, bir düğmeye tıkladığınızda (genellikle mobil cihazlarda menüyü açmak için kullanılır)
+                belirli bir HTML öğesinin görünürlüğünü değiştirir.
+
+                Örnekte, JavaScript, "navbar" adlı bir id'ye sahip bir HTML öğesini alır. Bu, menünün kendisidir. Daha
+                sonra, her tıklamada bu menünün CSS'inin "display" özelliğini kontrol eder. Eğer görünürse, "none"
+                olarak değiştirir ve görünmez hale getirir. Eğer görünmezse, "block" olarak değiştirir ve görünür hale
+                getirir. Bu, menüyü açmak ve kapatmak için bir toggle (açma/kapatma) mekanizması sağlar.</p>
+            <h3>Soru 2 Cevabı</h3>
+            <p> function toggleMenu() { <br>
+                var x = document.getElementsByClassName("navbar")[0]; <br>
+                if (x.className === "navbar") { <br>
+                x.className += " responsive"; <br>
+                } <br> else {
+                x.className = "navbar"; <br>
+                } <br>
+                } <br> <br>Bu kodlar, ekran genişliği 600 pikselden küçük olduğunda (tipik bir mobil ekran genişliği),
+                navbarı gizleyip menüyü açma/kapama ikonunu gösterir. Kullanıcı menüyü açtığında, JavaScript bu durumu
+                algılar ve navbarın sınıfına "responsive" sınıfını ekler. Bu "responsive" sınıfı, CSS'deki media
+                query'leri etkinleştirir ve mobil uyumlu görünümü sağlar.</p>
+        </div>
+
+        <!-- End smartphone / tablet look -->
+    </div>
+
+    <script>
+        //Burada kullanılan formül navbarı görünür ya da görünmez yapar.//
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
