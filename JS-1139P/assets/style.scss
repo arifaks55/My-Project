@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BZWQyNDVhNjQtMTg4ZC00OWExLTljOWItZTM0YjE1YjM4M2FjXkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team {
+    border: 2px solid #FED130;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #0033A0;
+}
+
+.controls button {
+    background-color: #FED130;
+    /* Sarı */
+    color: #0033A0;
+    /* Lacivert metin */
+    margin-right: 10px;
+}
+
+.controls input {
+    width: 50px;
+}
