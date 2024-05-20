@@ -27,3 +27,18 @@ function changeTeamName(teamID) {
     var nameElement = document.getElementById(teamID + 'Name');
     nameElement.innerText = newName;
 }
+// JavaScript ile ses çaları kontrol etmeye yarıyor.
+const audio = document.getElementById("myAudio");
+
+// Sayfa yüklendiğinde müziği otomatik olarak çalmak için kullandım.
+window.addEventListener("load", () => {
+    audio.play();
+});
+
+// Müziği durdurmak için bir düğme ekledim.
+const stopButton = document.createElement("button");
+stopButton.textContent = "Müziği Durdur";
+stopButton.addEventListener("click", () => {
+    audio.pause();
+});
+document.body.appendChild(stopButton);
