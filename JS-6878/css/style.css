@@ -1,0 +1,63 @@
+@charset "UTF-8";
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 68, 68, 0.8705882353);
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Butonların üzerine gelindiğindeki stili */
+.tablinks:hover {
+  background-color: rgba(11, 82, 95, 0.8470588235);
+  /* Arka plan rengi */
+  color: rgba(7, 27, 82, 0.8784313725);
+  /* Metin rengi */
+}
+
+/* Aktif butonun stili */
+.tablinks.active {
+  background-color: rgba(91, 189, 235, 0.9098039216);
+  /* Arka plan rengi */
+  color: rgba(8, 2, 88, 0.8352941176);
+  /* Metin rengi */
+  font-weight: bold;
+  /* Kalın metin */
+}
+
+.tab button:hover {
+  background-color: #ccc;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tabcontent h3 {
+  margin-top: 0;
+}
+
+.active {
+  background-color: #ccc;
+}
+
+span {
+  color: brown;
+  font-style: italic;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
