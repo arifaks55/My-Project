@@ -1,0 +1,29 @@
+.card {
+  background-color: #000000;
+  color: #FFFFFF;
+  border-color: #F7C948;
+}
+
+#filterContainer {
+  text-align: center;
+}
+
+.radio-input {
+  margin-right: 10px;
+}
+
+.radio-label {
+  color: #FFFFFF;
+}
+
+.character-card {
+  margin-bottom: 20px;
+}
+
+.character-image {
+  max-width: 100%;
+}
+
+.character-details {
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */

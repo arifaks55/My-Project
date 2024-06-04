@@ -1,0 +1,46 @@
+// Star Wars temalı renkler
+$primary-color: #F7C948; // Sarı renk
+$secondary-color: #000000; // Siyah renk
+$body-color: #FFFFFF; // Beyaz renk
+
+// Bootstrap tema ayarları
+$theme-colors: (
+    "primary": $primary-color,
+    "secondary": $secondary-color,
+    "light": $body-color,
+    "dark": $body-color,
+    "white": $body-color,
+);
+
+// Kart stilleri
+.card {
+    background-color: $secondary-color;
+    color: $body-color;
+    border-color: $primary-color;
+}
+
+// Filtre stilleri
+#filterContainer {
+    text-align: center;
+}
+
+.radio-input {
+    margin-right: 10px;
+}
+
+.radio-label {
+    color: $body-color;
+}
+
+// Karakter kartı stilleri
+.character-card {
+    margin-bottom: 20px;
+}
+
+.character-image {
+    max-width: 100%;
+}
+
+.character-details {
+    padding: 20px;
+}
