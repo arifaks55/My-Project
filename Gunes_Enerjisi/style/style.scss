@@ -1,0 +1,48 @@
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$danger: #dc3545;
+$info: #17a2b8;
+$dark: #343a40;
+$light: #f8f9fa;
+
+$theme-colors: (
+    primary: $primary,
+    secondary: $secondary,
+    success: $success,
+    danger: $danger,
+    info: $info,
+    dark: $dark,
+    light: $light
+);
+
+body {
+    background-color: $light;
+}
+
+header {
+    background-color: $dark;
+}
+
+.card {
+    margin-top: 3rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#resultContainer {
+    max-width: 400px;
+    margin: 2rem auto 0;
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+}
