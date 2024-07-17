@@ -1,0 +1,134 @@
+//https://nefa-rsurya99.vercel.app/ projenin adresi//
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+header,
+nav,
+main,
+footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+header img {
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero-section {
+    background: url('https://nefa-rsurya99.vercel.app/_nuxt/img/hero-image.15eeae4.webp') no-repeat center center/cover;
+    padding: 100px 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.section {
+    padding: 50px 20px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.partner-logos img {
+    width: 100px;
+    margin: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content div {
+    flex: 1;
+    margin: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
